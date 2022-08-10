@@ -78,27 +78,4 @@ window.onscroll = function() {
             img.style.width = img.dataset.width;
         }
     }
-    //apointment
-let appointment = document.querySelectorAll(".booking button");
-let card = document.createElement("div");
-card.innerHTML = `
-<form name="appointment" netlify>
-<label for="name">name</label>
-<input type="text" name="name" required>
-<label for="tel">phone number</label>
-<input type="tel" name="mobile" required>
-<label for="email">email</label>
-<input type="email" name="email">
-<label for="discription">discription</label>
-<textarea name="dicripition" id="dicripition" cols="30" rows="10" required style="resize:none"></textarea>
-<button>submit</button>
-</form>
-`
-document.getElementById("Contact").appendChild(card)
-card.classList.add("appointment")
-appointment[0].onclick = () => {
-    card.classList.toggle("bookingCard")
-}
-card.onmouseleave = function() {
-    card.style.transform = " translate(-50%, -50%) scale(0)"
-};
+  
